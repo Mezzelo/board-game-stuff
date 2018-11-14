@@ -1,6 +1,6 @@
 # board-game-stuff
 
-![picture of what it looks like wew](https://github.com/Mezzelo/board-game-stuff/blob/master/samplePic.png)
+![picture of what it looks like wew](https://github.com/Mezzelo/board-game-stuff/blob/master/samplePic2.png)
 
 basically tabletop simulator lite.    
 Set this up in ~2 hours so people don't have to cut out their paper games to test them and record them on fuckin phone cam or whatever to share them.
