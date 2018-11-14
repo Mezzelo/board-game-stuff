@@ -18,6 +18,8 @@ Click to move one card forward.
 Right click to move one card back.    
 Space to shuffle.
 
+R to reset scene, escape to close out program.
+
 You can set up your paper prototypes using this pretty easily.  Objects (like tokens or cards) should be under the "Interactive" gameobject in the hierarchy and use a SpriteRenderer component with the "ShaderMat" material, found under /Assets/Shader.
 
 # acknowledgements
