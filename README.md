@@ -17,8 +17,8 @@ While holding shift or control...
 Mousewheel up/down to modify spacing between objects    
 Click to move one card forward.    
 Right click to move one card back.    
-Space to bridge and shuffle.
-T to reverse the order of your held cards.
+Space to bridge and shuffle.     
+T to reverse the order of your held cards.     
 R to flip card to front/back if it has the appropriate components and if you're using shift.
 
 Escape to reset the scene.
