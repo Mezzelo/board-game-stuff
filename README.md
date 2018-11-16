@@ -3,7 +3,7 @@
 ![picture of what it looks like wew](https://github.com/Mezzelo/board-game-stuff/blob/master/samplePic2.png)
 
 basically tabletop simulator lite.    
-Set this up in ~2 hours so people don't have to cut out their paper games to test them and record them on fuckin phone cam or whatever to share them.
+Set this up in ~2 hours so people don't have to cut out their paper games to test them.  also makes online playtesting easier
 
 # setup/instructions
 
@@ -29,4 +29,4 @@ You can set up your paper prototypes using this pretty easily.  Objects (like to
 
 Uses a slightly modified version of Seyed Morteza Kamali's two-pass sprite drop-shader, cause I didn't really have time to do it myself.  https://github.com/UnityCommunity/UnityLibrary/blob/master/Assets/Shaders/2D/Sprites/SpriteDropShadow.shader    
 made to ease up development for stuff.    
-please don't rip my code for your final project or for profit.  fuck you if you're thinking about it.
+please don't rip my code for your final project or for profit why would you do that
