@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,7 +9,7 @@ public class DragScript : MonoBehaviour {
     Transform bObjects;
 
     int dragType = 0;
-    // 0 = 
+    // 0 = idle, 1 = single, 2 = same tag, 3 = all
     int boardObjectCount = 0;
     float scaleTween = 0f;
     public float scaleTweenMax = 0.25f;
@@ -93,12 +93,25 @@ public class DragScript : MonoBehaviour {
                         }
                     }
                 }
-            } else if (Input.GetKey(KeyCode.Mouse0)) {
+            }
+            else if (Input.GetKey(KeyCode.Mouse0)) {
                 Ray ray = gameCam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit)) {
                     dragType = 1;
                     addDraggedObject(hit.transform);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.R)) {
+                Ray ray = gameCam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit)) {
+                    if (hit.transform.gameObject.GetComponent<CardBack>()) {
+                        gameObject.GetComponents<AudioSource>()[1].Play();
+                        hit.transform.gameObject.GetComponent<CardBack>().backUp = 
+                            !hit.transform.gameObject.GetComponent<CardBack>().backUp;
+                        setCardSprite(hit.transform);
+                    }
                 }
             } else if (Input.GetKey(KeyCode.LeftShift)) {
                 dragType = 2;
@@ -195,7 +208,7 @@ public class DragScript : MonoBehaviour {
                             transform.GetChild(i + transform.childCount / 2).SetSiblingIndex(i * 2 + 1);
                         spreadCards(true); */
                 }
-                else if (Input.GetKeyDown(KeyCode.Space) && transform.childCount > 1) {
+                else if (Input.GetKey(KeyCode.Space) && transform.childCount > 1) {
                     gameObject.GetComponents<AudioSource>()[5].Play();
                     for (int i = 0; i < transform.childCount / 2 - 1; i++)
                         transform.GetChild(i + transform.childCount / 2).SetSiblingIndex(i * 2 + 1);
