@@ -25,6 +25,8 @@ Escape to reset the scene.
 
 You can set up your paper prototypes using this pretty easily.  Objects (like tokens or cards) should be under the "Interactive" gameobject in the hierarchy and use a SpriteRenderer component with the "ShaderMat" material, found under /Assets/Shader.  Use the "CardBack" component for objects with two sides you can flip between.
 
+If you don't understand any of that check the "sample-project" branch.  it's our group's prototype lol
+
 # acknowledgements
 
 Uses a slightly modified version of Seyed Morteza Kamali's two-pass sprite drop-shader, cause I didn't really have time to do it myself.  https://github.com/UnityCommunity/UnityLibrary/blob/master/Assets/Shaders/2D/Sprites/SpriteDropShadow.shader    
