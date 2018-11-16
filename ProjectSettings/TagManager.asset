@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Card
   - GamePiece
+  - CardMove
+  - CardAction
+  - CardPassive
   layers:
   - Default
   - TransparentFX
